@@ -151,6 +151,18 @@
        -o-transition-duration: @transition-duration;
           transition-duration: @transition-duration;
 }
+.transition-property(@transition-property) {
+  -webkit-transition-property: @transition-property;
+     -moz-transition-property: @transition-property;
+       -o-transition-property: @transition-property;
+          transition-property: @transition-property;
+}
+.transition-timing-function(@transition-timing-function) {
+  -webkit-transition-timing-function: cubic-bezier(@transition-timing-function);
+     -moz-transition-timing-function: cubic-bezier(@transition-timing-function);
+       -o-transition-timing-function: cubic-bezier(@transition-timing-function);
+          transition-timing-function: cubic-bezier(@transition-timing-function);
+}
 
 // Transformations
 .rotate(@degrees) {
